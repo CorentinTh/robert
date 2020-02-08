@@ -1,0 +1,35 @@
+{
+  "name": "robert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorentinTh/robert.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorentinTh/robert/issues"
+  },
+  "homepage": "https://github.com/CorentinTh/robert#readme",
+  "devDependencies": {
+    "@types/ffmpeg-static": "^3.0.0",
+    "@types/fluent-ffmpeg": "^2.1.14",
+    "@types/node": "^13.7.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "discot": "^1.1.2",
+    "ffmpeg-static": "^4.0.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-opus": "^0.3.3",
+    "ytdl-core": "^1.0.7"
+  }
+}

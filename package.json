@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "postinstall": "node scripts/postinstall.js"
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,6 @@
   },
   "dependencies": {
     "discot": "^1.1.2",
-    "ffmpeg-static": "^4.0.1",
     "fluent-ffmpeg": "^2.1.2",
     "node-opus": "^0.3.3",
     "ytdl-core": "^1.0.7"

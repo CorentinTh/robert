@@ -1,9 +1,6 @@
 import FFmpeg, {FfmpegCommand} from 'fluent-ffmpeg'
 import ytdl from 'ytdl-core'
 import {PassThrough, Readable} from 'stream'
-import ffmpegPath from 'ffmpeg-static'
-
-process.env.FFMPEG_PATH = ffmpegPath;
 
 export class YoutubeAudioStream extends PassThrough {
     private readonly video: Readable;

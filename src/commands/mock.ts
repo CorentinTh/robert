@@ -6,10 +6,10 @@ export default <Command>{
     name: 'mock',
     description: 'Mock previous tweet like Spongebob.',
     action: message => {
-        message.channel.fetchMessages({ limit: 2 }).then(messages => {
-            if (messages.size === 2){
+        message.channel.fetchMessages({limit: 2}).then(messages => {
+            if (messages.size === 2) {
                 message.channel.send(mock(messages.last().content));
-            }else{
+            } else {
                 message.channel.send('No message to mock.');
             }
         });

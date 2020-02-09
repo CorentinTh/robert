@@ -17,10 +17,10 @@ export class YoutubeAudioStream extends PassThrough {
         this.ffmpeg = FFmpeg(this.video);
 
         process.nextTick(() => {
-            const output = this.ffmpeg.format('mp3').pipe(this);
+            this.ffmpeg.format('mp3').pipe(this);
 
             this.ffmpeg.on('error', (error: Error) => this.emit('error', error));
-            output.on('error', (error: Error) => {
+            this.on('error', (error: Error) => {
                 this.video.destroy();
                 console.log(error);
             })

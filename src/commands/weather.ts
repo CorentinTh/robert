@@ -6,17 +6,22 @@ export default <Command>{
     name: 'weather',
     description: 'Reply with "pong".',
     action: message => {
-        let city : string = message.content.split(' ')[1];
+        let city : string = message.content.split(' ').slice(1).join('+');
         let api_key : string = process.env.WEATHER_KEY ?? "";
         let url : string = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric`;
         let weather;
 
         (async () => {
-            weather = JSON.parse(await request.get(url));
-            //console.log(result);
+            try{
+                weather = JSON.parse(await request.get(url));
+
+            }
+            catch(e){
+                message.channel.send("Malheuresement la requête au serveur météo a échoué");
+                return;
+            }
             try {
                 let toSend = `Il fait ${weather.main.temp} degrés à ${weather.name}!`;
-                //message.channel.send(toSend);
                 message.channel.send({embed: {
                     color: 3447003,
                     title: `Voici la météo pour ${weather.name} :sun_with_face:`,

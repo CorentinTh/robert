@@ -1,10 +1,9 @@
 import {Command} from "discot";
 import * as request from "request-promise-native";
 
-
 export default <Command>{
     name: 'weather',
-    description: 'Reply with "pong".',
+    description: 'Reply with weather for choosen place.',
     action: message => {
         let city : string = message.content.split(' ').slice(1).join('+');
         let api_key : string = process.env.WEATHER_KEY ?? "";

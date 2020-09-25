@@ -22,12 +22,18 @@
     "@types/ffmpeg-static": "^3.0.0",
     "@types/fluent-ffmpeg": "^2.1.14",
     "@types/node": "^13.7.0",
+    "@types/request": "^2.48.5",
+    "@types/request-promise-native": "^1.0.17",
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "discot": "^1.1.2",
+    "dotenv": "^8.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "node-opus": "^0.3.3",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
     "ytdl-core": "^1.0.7"
   }
 }

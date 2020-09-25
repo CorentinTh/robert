@@ -5,7 +5,6 @@ import mockCommand from './commands/mock';
 import playCommand from './commands/play';
 import stopCommand from './commands/stop';
 import weatherCommand from './commands/weather';
-import weather from './commands/weather';
 
 
 new Bot()

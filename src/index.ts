@@ -1,4 +1,3 @@
-require('dotenv').config()
 import {Bot} from 'discot';
 import pingCommand from './commands/ping';
 import mockCommand from './commands/mock';

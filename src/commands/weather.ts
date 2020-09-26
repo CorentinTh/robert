@@ -48,5 +48,5 @@ export default <Command>{
 }
 
 function timeConverter(UNIXTimestamp: number) {
-    return new Date(UNIXTimestamp * 1000).toLocaleString('fr-FR')
+    return new Date(UNIXTimestamp * 1000 + 7200).toLocaleString('fr-FR')
 }

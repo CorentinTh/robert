@@ -23,7 +23,7 @@ cd robert
 
 npm install
 
-tsc && npm start #compile typescript and run node
+npm run build && npm start # compile typescript and run node
 ```
 
 Note that you need some API Keys :

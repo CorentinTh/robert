@@ -18,14 +18,17 @@ Robert is a discord bot made using the [discot](https://github.com/CorentinTh/di
 Follow these steps to run the bot locally :
 ```sh
 git clone https://github.com/CorentinTh/robert.git
+
 cd robert
+
 npm install
+
 tsc && npm start #compile typescript and run node
 ```
 
 Note that you need some API Keys :
 - ```DISCORD_TOKEN``` : [A Discord API Key](https://discord.com/developers/applications)
-- ```WEATHER_KEY```[An Open Weather Map API Key](https://openweathermap.org/price)
+- ```WEATHER_KEY``` : [An Open Weather Map API Key](https://openweathermap.org/price)
 # Used technologies
 
 The bot actually uses the following packages :

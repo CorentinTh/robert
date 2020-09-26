@@ -10,7 +10,7 @@ export default <Command>{
         const city: string = message.content.split(' ').slice(1).join('+');
         const url: string = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WEATHER_KEY}&units=metric`;
         try {
-            const {data} = (await axios.get(url));
+            const {data} = await axios.get(url);
             message.channel.send({
                 embed: {
                     color: 3447003,

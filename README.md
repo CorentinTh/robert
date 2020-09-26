@@ -30,11 +30,11 @@ Note that you need some API Keys :
 
 The bot actually uses the following packages :
 - ffmpeg-static: 3.0.0
-- fluent-ffmpeg": 2.1.14
-- node: 13.7.0,
+- fluent-ffmpeg: 2.1.14
+- node: 13.7.0
 - typescript: 3.7.5
 - axios: 0.20.0
 - discot: 1.3.1
 - fluent-ffmpeg: 2.1.2
 - node-opus: 0.3.3
-- ytdl-core": 1.0.7
+- ytdl-core: 1.0.7

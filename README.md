@@ -47,4 +47,4 @@ The bot actually uses the following packages :
 
 To verify your code, use : 
 
-```npx eslint . --ext .js,.jsx,.ts,.tsx```
+```npm run lint```

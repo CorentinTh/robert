@@ -9,10 +9,6 @@ jobs:
       CI: true
       node_version: 12.x
 
-    strategy:
-      matrix:
-        node-version: 12.x
-
     steps:
       - uses: actions/checkout@v2
 

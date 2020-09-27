@@ -1,11 +1,11 @@
 # Robert
 Robert is a discord bot made using the [discot](https://github.com/CorentinTh/discot/) framework.
 
-# New features !
+## New features !
  - Type **!cnfact** for a random Chuck Norris fact
  - Type **!weather {city}** for weather informations about the given city
 
-# Available commands
+## Available commands
 - **!weather {city}** for weather informations about the given city
 - **!cnfact** for a random Chuck Norris fact
 - **!ping** to get a "pong" answer
@@ -13,7 +13,7 @@ Robert is a discord bot made using the [discot](https://github.com/CorentinTh/di
 - **!stop** to stop the bot from playing audio
 - **!mock {text}** to mock a sentence like the famous [spongebob meme](https://raw.githubusercontent.com/dhildebr/spongebob-case/master/memEs%20aRen't%20a%20SeRious%20SubjECt.jpg)
 
-# Installation
+## Installation
 
 Follow these steps to run the bot locally :
 ```sh
@@ -29,7 +29,7 @@ npm run build && npm start # compile typescript and run node
 Note that you need some API Keys :
 - ```DISCORD_TOKEN``` : [A Discord API Key](https://discord.com/developers/applications)
 - ```WEATHER_KEY``` : [An Open Weather Map API Key](https://openweathermap.org/price)
-# Used technologies
+## Used technologies
 
 The bot actually uses the following packages :
 - ffmpeg-static: 3.0.0
@@ -41,3 +41,10 @@ The bot actually uses the following packages :
 - fluent-ffmpeg: 2.1.2
 - node-opus: 0.3.3
 - ytdl-core: 1.0.7
+- eslint": 7.9.0
+
+## Linter
+
+To verify your code, use : 
+
+```npm run lint```

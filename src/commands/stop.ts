@@ -1,5 +1,4 @@
 import {Command} from "discot";
-import {YoutubeAudioStream} from "../tools/YoutubeAudioStream";
 
 export default <Command>{
     name: 'stop',

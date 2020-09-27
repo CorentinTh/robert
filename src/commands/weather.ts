@@ -48,5 +48,5 @@ export default <Command>{
 }
 
 function timeConverter(UNIXTimestamp: number) {
-    return new Date(UNIXTimestamp).toTimeString().slice(0, 5);
+    return new Date(UNIXTimestamp * 1000).toTimeString().slice(0, 5);
 }

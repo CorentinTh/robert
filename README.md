@@ -1,4 +1,6 @@
 # Robert
+![Node.js CI](https://github.com/CorentinTh/robert/workflows/Node.js%20CI/badge.svg)
+
 Robert is a discord bot made using the [discot](https://github.com/CorentinTh/discot/) framework.
 
 ## New features !
